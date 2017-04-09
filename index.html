@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coursera Data visualization Assignment</title>
+  <link rel="stylesheet" href="/lib/plottable/plottable.css">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Trend of Rising Surface Temperature in Both Northern & Southern Hemisphere</h2>
+    <div class="chart-container">
+      <svg id="chart" width="100%" height="100%"></svg>
+    </div>
+    <blockquote>
+      This visualization shows global surface temperature change over time using
+      data from GISS Surface Temperature Analysis (GISTEMP). I plotted mean
+      surface temperatures against the year they are recorded from 1880 to 2015.
+      The chart is broken down into temperature in the Northern hemisphere and
+      temperature in the Southern hemisphere. On top of the scatter plot, I
+      overlayed LOESS smoothed curves with 90% confidence interval band to
+      further highlight the trend. We can see that surface temperature had risen
+      almost 1.2°C in the last century. The rise is more pronounced in the
+      Northern hemisphere.
+    </blockquote>
+  </div>
+  <script src="/lib/d3/d3.js"></script>
+  <script src="/lib/plottable/plottable.js"></script>"
+  <script src="/index.js"></script>
+</body>
+</html>
