@@ -1,6 +1,6 @@
 'use strict';
 
-var dataURL = window.location.path + '/data/processed.json';
+var dataURL = window.location.href + '/data/processed.json';
 
 window.fetch(dataURL).then(function (res) {
   return res.json();
