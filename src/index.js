@@ -1,4 +1,4 @@
-const dataURL = window.location.path + '/data/processed.json'
+const dataURL = window.location.href + '/data/processed.json'
 
 window.fetch(dataURL).then(res => res.json()).then(json => {
   const data = {NHem: [], SHem: []}
