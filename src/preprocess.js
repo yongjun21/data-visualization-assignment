@@ -1,4 +1,4 @@
-import raw from '../dist/data/GISTEMPData2.json'
+import raw from '../data/GISTEMPData2.json'
 import Loess from 'loess'
 import fs from 'fs'
 

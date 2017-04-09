@@ -1,6 +1,6 @@
 'use strict';
 
-var dataURL = window.location.origin + '/data/tmp.json';
+var dataURL = window.location.path + '/data/processed.json';
 
 window.fetch(dataURL).then(function (res) {
   return res.json();
