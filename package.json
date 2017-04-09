@@ -1,0 +1,43 @@
+{
+  "name": "data-visualization-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "http-server dist/",
+    "build": "babel-node src/preprocess.js && babel src/index.js -o dist/index.js",
+    "watch": "babel src/index.js -o dist/index.js --watch",
+    "test": "standard src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yongjun21/data-visualization-assignment.git"
+  },
+  "author": "Yong Jun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yongjun21/data-visualization-assignment/issues"
+  },
+  "homepage": "https://github.com/yongjun21/data-visualization-assignment#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "standard": "^10.0.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "d3",
+      "Plottable"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "loess": "^1.3.4",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
