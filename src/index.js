@@ -98,8 +98,8 @@ window.fetch(dataURL).then(res => res.json()).then(json => {
     [yLabel, layoutInner]
   ])
 
-  new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.NHem)
-  new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.SHem)
+  // new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.NHem)
+  // new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.SHem)
 
   layoutOuter.renderTo('svg#chart')
 
