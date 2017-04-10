@@ -95,8 +95,8 @@ window.fetch(dataURL).then(function (res) {
 
   var layoutOuter = new Plottable.Components.Table([[yLabel, layoutInner]]);
 
-  new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.NHem);
-  new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.SHem);
+  // new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.NHem)
+  // new Plottable.Interactions.PanZoom(xScale, null).attachTo(markers.SHem)
 
   layoutOuter.renderTo('svg#chart');
 
